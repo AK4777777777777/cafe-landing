@@ -1470,6 +1470,11 @@ body {
 /*media queries 400px*/
 
 @media (max-width:400px) {
+    * {
+      -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  image-rendering: auto;
+    }
 
 
     html, body {
@@ -1600,8 +1605,8 @@ body {
     .espressomenu {
         padding: 0;
         margin-right: 3rem;
-        width: 23rem;
-        height: 23rem;
+        width: 21rem;
+        height: 21rem;
 
     }
 
@@ -1626,8 +1631,8 @@ body {
     .icedsipsmenu{
         padding: 0;
         margin-right: 3rem;
-        width: 23rem;
-        height: 23rem;
+        width: 21rem;
+        height: 21rem;
     }
 
     .icedsips-cta {
@@ -1651,8 +1656,8 @@ body {
     .freshbakesmenu {
         padding: 0;
         margin-right: 3rem;
-        width: 23rem;
-        height: 23rem;
+        width: 21rem;
+        height: 21rem;
     }
 
     .freshbakes-cta {
@@ -1677,8 +1682,8 @@ body {
     .signatureblendsmenu {
         padding: 0;
         margin-right: 3rem;
-        width: 23rem;
-        height: 23rem;
+        width: 21rem;
+        height: 21rem;
     }
 
 
