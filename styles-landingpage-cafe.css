@@ -1684,6 +1684,8 @@ body {
         margin-right: 3rem;
         width: 21rem;
         height: 21rem;
+
+        image-rendering: auto;
     }
 
 
