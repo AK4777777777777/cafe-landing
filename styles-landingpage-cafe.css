@@ -451,6 +451,8 @@ body {
     .espressomenu {
           border-radius: 3rem;
         transition: 0.3s ease-in-out ;
+      width: 22rem;
+      height: 22rem;
 
         transform: scale(1);
     }
