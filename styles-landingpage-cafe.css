@@ -148,12 +148,57 @@ body {
 
 
 
+/*Mobile only*/
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+
+
+}
+
+.hamburger-bars {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+
+    border-radius: 2px;
+}
+
+
+.hamburger-menu {
+    display: none;
+    
+
+    background-color: #E6CFC7;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    padding: 1rem 0;
+    z-index: 9999;
 
 
 
 
+}
+.hamburger-menu ul {
+    list-style: none;
+}
+
+ .hamburger-menu a{
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+     
+ }
 
 
+
+    
     
 /* LandingPage Herotext and Main*/
 
@@ -167,6 +212,8 @@ body {
     flex-direction: column;
 
     gap: 3rem;
+   
+
 }
 
 
@@ -181,13 +228,13 @@ body {
 
         text-shadow: 2px 4px 6px black;
 
-        position: relative;
+
         top: 4rem;
 
 
         font-weight: 400;
 
-        z-index: 1;
+        
         
 
         
@@ -200,6 +247,7 @@ body {
         font-size: 2rem;
         font-family: "Playfair Display SC" ,sans-serif;
 
+
         color: #F5F1E6;
         padding: 2rem;
 
@@ -210,7 +258,7 @@ body {
 
 
         font-weight: 400;
-        z-index: 1;
+        
     }
 
 
@@ -424,10 +472,13 @@ body {
 
 .ourmenu-content-menus {
     display: grid;
-    justify-content: center;
+    
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-   padding: 6.7rem 6rem;
+   
+  
+  
+  
 
    
 
@@ -441,7 +492,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 3rem;
+        
+
+
 
         gap: 3rem;
         
@@ -451,8 +504,13 @@ body {
     .espressomenu {
           border-radius: 3rem;
         transition: 0.3s ease-in-out ;
-      width: 22rem;
-      height: 22rem;
+        
+
+       width: 100%;
+  max-width: 550px;
+  height: auto;
+ 
+      
 
         transform: scale(1);
     }
@@ -497,8 +555,12 @@ body {
         flex-direction: column;
         align-items: center;
 
-        margin-left: 3rem;
-        margin-top: 3rem;
+
+       
+        
+
+      
+        
 
         gap: 3rem;
         
@@ -510,6 +572,11 @@ body {
         transition: 0.3s ease-in-out ;
 
         transform: scale(1);
+
+         width: 100%;
+  max-width: 550px;
+  height: auto;
+        
     }
 
     .icedsipsmenu:hover {
@@ -551,7 +618,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 3rem;
+        
 
         gap: 3rem;
     }
@@ -564,6 +631,10 @@ body {
         transition: 0.3s ease-in-out ;
 
         transform: scale(1);
+         width: 100%;
+  max-width: 550px;
+  height: auto;
+        
     }
 
     .signatureblendsmenu:hover {
@@ -609,8 +680,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 3rem;
-        margin-top: 3rem;
+        
+        
 
         gap: 3rem;
     }
@@ -622,6 +693,10 @@ body {
         transition: 0.3s ease-in-out ;
 
         transform: scale(1);
+         width: 100%;
+  max-width: 550px;
+  height: auto;
+        
     }
 
     .freshbakesmenu:hover {
@@ -1260,6 +1335,7 @@ body {
 
 /* Media Queries */
 
+
 @media (max-width:768px) {
 
 
@@ -1267,10 +1343,68 @@ body {
         overflow-x: hidden;
     }
 
+
+
+
+
+   .hamburger {
+    display: flex;
+    padding: 1rem;
+
+   }
+
+
+   .hamburger-menu.active {
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    
     
 
-    .landing-page-nav {
+
+   }
+
+
+
+
+
+
+
+   .herotext-header {
+    z-index: 1;
+   }
+
+
+   .herotext-subtext {
+    z-index: 1;
+   }
+
+
+
+
+
+   
+
+
+
+
+
+
+
+    
+
+
+    
+        
+   .landing-page-nav {
+    gap: 1rem;
+   }
+    
+
+    .landing-page-nav a {
         display: none;
+
+        
     }
     .bgvideo-landingpage {
       object-fit: cover;
@@ -1381,7 +1515,7 @@ body {
 
     .espressomenu {
         padding: 0;
-        margin-right: 3rem;
+        margin: auto;
         width: 25rem;
         height: 25rem;
     }
@@ -1394,7 +1528,7 @@ body {
 
     .icedsipsmenu{
         padding: 0;
-        margin-right: 3rem;
+        margin: auto;
         width: 25rem;
         height: 25rem;
     }
@@ -1408,7 +1542,7 @@ body {
 
     .freshbakesmenu {
         padding: 0;
-        margin-right: 3rem;
+        margin: auto;
         width: 25rem;
         height: 25rem;
     }
@@ -1422,7 +1556,7 @@ body {
 
     .signatureblendsmenu {
         padding: 0;
-        margin-right: 3rem;
+        margin: auto;
         width: 25rem;
         height: 25rem;
     }
@@ -1494,7 +1628,7 @@ body {
 
     
 
-    .landing-page-nav {
+    .landing-page-nav a {
         display: none;
     }
     .bgvideo-landingpage {
@@ -1754,6 +1888,9 @@ body {
 
             font-size: 0.8rem;
         }
+
+
+    
     
     }
 
@@ -1763,6 +1900,14 @@ body {
 
 
 
+    
+
+
+
+
+
+
+
 
 
 
@@ -1790,6 +1935,7 @@ body {
 
 
     
+
 
 
 
