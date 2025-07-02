@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +21,7 @@
 <body>
       <nav class="landing-page-nav">
             <div class="logo-and-banner">
-                <img src="logo-image.png" alt="logo and banner" class="logo">
+                <img src="images/logo-image.png" alt="logo and banner" class="logo">
             </div>
 
             <div class="navbar-content-landingpage">
@@ -42,11 +46,17 @@
 
 
             <div class="hamburger-menu">
+
+
                 <ul>
-                    <li class="homepage-HB"> <a href=""> Home</a> </li>
-                    <li class="aboutus-HB"> <a href=""> Our Story</a></li>
-                    <li class="menupage-HB"> <a href=""> Our Menu </a></li>
-                    <li class="contactuspage-HB"> <a href=""> Contact Us</a></li>
+                    <svg class="close-icon-HB" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+
+
+
+                    <li class="homepage-HB"> <a href="#landingpage" class="mobile-only-a"> Home</a> </li>
+                    <li class="aboutus-HB"> <a href="#aboutus" class="mobile-only-a"> Our Story</a></li>
+                    <li class="menupage-HB"> <a href="#ourmenu" class="mobile-only-a"> Our Menu </a></li>
+                    <li class="contactuspage-HB"> <a href="#contactus" class="mobile-only-a"> Contact Us</a></li>
 
                 </ul>
             </div>
@@ -62,7 +72,7 @@
     <!-- Landing Section -->
     <section class="landing-section" id="landingpage">
         <div class="video-container">
-            <video src="coffeebg.webm" class="bgvideo-landingpage" autoplay loop muted playsinline></video>
+            <video src="images/coffeebg.webm" class="bgvideo-landingpage" autoplay loop muted playsinline></video>
             <div class="bgvideo-overlay"></div>
         </div>
 
@@ -97,12 +107,12 @@
     </section>
 
     <!-- Other Sections -->
-    <section class="ourstory" id="aboutus">
+    <section class="ourstory" id="aboutus" data-aos="fade-up">
         <div class="ourstory-content">
 
 
             
-            <img src="pexels-kseniachernaya-3951751.jpg" alt="picofacoffeecounter" class="ourstoryimage">
+            <img src="images/pexels-kseniachernaya-3951751.jpg" alt="picofacoffeecounter" class="ourstoryimage">
             
 
 
@@ -139,7 +149,7 @@
 <!-- Our Menu -->
 
 
-<section class="ourmenu" id="ourmenu">
+<section class="ourmenu" id="ourmenu" data-aos="fade-up">
     <div class="ourmenu-content">
         <div class="ourmenu-content-text">
             <h1 class="ourmenu-content-header">
@@ -157,9 +167,9 @@
 
 
         <div class="ourmenu-content-menus">
-            <div class="ourmenu-content-menus-espressomenu">
+            <div class="ourmenu-content-menus-espressomenu" data-aos="fade-up">
                  
-                <img src="Espresso Menu.png" alt="espressomenu" class="espressomenu">
+                <img src="images/Espresso Menu.png" alt="espressomenu" class="espressomenu">
                 <div class="espressomenu-cta">
 
                 
@@ -172,8 +182,8 @@
 
 
 
-            <div class="ourmenu-content-menus-icedsips">
-                <img src="Icedsips menu.png" alt="icedsipsmenu" class="icedsipsmenu" >
+            <div class="ourmenu-content-menus-icedsips" data-aos="fade-up">
+                <img src="images/Icedsips menu.png" alt="icedsipsmenu" class="icedsipsmenu" >
                 <div class="icedsips-cta">
                 <span>
                     Check Detailed Menu
@@ -183,8 +193,8 @@
 
 
 
-            <div class="ourmenu-content-menus-signatureblends">
-                <img src="Signature Blends.png" alt="signatureblends" class="signatureblendsmenu">
+            <div class="ourmenu-content-menus-signatureblends" data-aos="fade-up">
+                <img src="images/Signature Blends.png" alt="signatureblends" class="signatureblendsmenu">
                 <div class="signatureblends-cta">
                 <span>
                     Check Detailed Menu
@@ -193,9 +203,9 @@
             </div>
 
 
-            <div class="ourmenu-content-menus-freshbakes">
+            <div class="ourmenu-content-menus-freshbakes" data-aos="fade-up">
                 
-                <img src="Fresh Bakes.png" alt="freshbakes" class="freshbakesmenu">
+                <img src="images/Fresh Bakes.png" alt="freshbakes" class="freshbakesmenu">
                 
                 <div class="freshbakes-cta">
                 <span>
@@ -273,14 +283,14 @@
                 
             
         </div>
-         <img src="visitusimg1.png" alt="visitusimg1" class="visitusimg1">
+         <img src="images/visitusimg1.png" alt="visitusimg1" class="visitusimg1">
 
 
 
 
 
 
-        <img src="visitusimg2.png" alt="visitusimg2" class="visitusimg2">
+        <img src="images/visitusimg2.png" alt="visitusimg2" class="visitusimg2">
 
 
         <div class="visit-us-text2">
@@ -356,17 +366,17 @@
 
             <div class="contactus-content-address">
                 <span class="contactus-content-address-phone">
-                    <img src="phone-svgrepo-com.svg" alt="phone" class="phone">
+                    <img src="images/phone-svgrepo-com.svg" alt="phone" class="phone">
                     Phone: 9805XXXXXX
                 </span>
 
                 <span class="contactus-content-address-email">
-                    <img src="email-svgrepo-com.svg" alt="email" class="email">
+                    <img src="images/email-svgrepo-com.svg" alt="email" class="email">
                     Email: hello@verdea.com
                 </span>
 
                 <span class="contactus-content-address-address">
-                    <img src="map-pin-svgrepo-com (1).svg" alt="map-pin" class="map-pin">
+                    <img src="images/map-pin-svgrepo-com (1).svg" alt="map-pin" class="map-pin">
                     Address: Roastville, Brewstate
                 </span>
             </div>
@@ -407,7 +417,7 @@
     </div>
 
 
-    <img src="line seprator.svg" alt="line separator" class="line-separator">
+    <img src="images/line seprator.svg" alt="line separator" class="line-separator">
 
 </section>
 
@@ -437,7 +447,7 @@
 
 
         <div class="coffee-beans">
-            <img src="coffee-beans.svg" alt="coffeebeans" class="coffee-beans">
+            <img src="images/coffee-beans.svg" alt="coffeebeans" class="coffee-beans">
 
         </div>
 
@@ -499,17 +509,17 @@
                 
             <div class="contactus-content-address-footer">
                 <span class="contactus-content-address-phone">
-                    <img src="phone-svgrepo-com.svg" alt="phone" class="phone">
+                    <img src="images/phone-svgrepo-com.svg" alt="phone" class="phone">
                     Phone: 9805XXXXXX
                 </span>
 
                 <span class="contactus-content-address-email">
-                    <img src="email-svgrepo-com.svg" alt="email" class="email">
+                    <img src="images/email-svgrepo-com.svg" alt="email" class="email">
                     Email: hello@verdea.com
                 </span>
 
                 <span class="contactus-content-address-address">
-                    <img src="map-pin-svgrepo-com (1).svg" alt="map-pin" class="map-pin">
+                    <img src="images/map-pin-svgrepo-com (1).svg" alt="map-pin" class="map-pin">
                     Address: Roastville, Brewstate
                 </span>
             </div>
@@ -518,7 +528,7 @@
             <div class="social-handles">
                 
             <span class="x">
-                <img src="x-social-media-logo-icon.svg" alt="x" class="x-logo">
+                <img src="images/x-social-media-logo-icon.svg" alt="x" class="x-logo">
                 @VerdeaBrews
             </span>
 
@@ -526,12 +536,12 @@
 
                 
             <span class="instagram">
-                <img src="instagram-svgrepo-com.svg" alt="instagram" class="instagram-logo">
+                <img src="images/instagram-svgrepo-com.svg" alt="instagram" class="instagram-logo">
                 @sipVerdea
             </span>
 
             <span class="facebook">
-                <img src="facebook-svgrepo-com.svg" alt="facebook" class="facebook-logo">
+                <img src="images/facebook-svgrepo-com.svg" alt="facebook" class="facebook-logo">
                 @VerdeaBrews
             </span>
             </div>
@@ -548,5 +558,13 @@
 
 
 <script src="java.js"></script>
+
+<!-- ✅ Initialize AOS -->
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true // run only once per element
+  });
+</script>
 </body>
 </html>
