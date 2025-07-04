@@ -1408,69 +1408,251 @@ body {
 
 
 
-.mobile-only-contact-us {
-    display: none;
+/* Contact Us Mobile-only*/
+
+
+.contactus-mobileonly {
+    background: linear-gradient(to bottom, #F9EFE5, #EADCD3)
 }
 
-
-
-
-
-.contact-us-mobile-text {
+.contactus-mobileonly-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    gap: 0.5rem;
-
-    
+    padding-top: 5rem;
+    gap: 0.8rem;
 }
 
 
-    .contact-us-mobile-header {
-        font-size: 3rem;
-        font-family: "Playfair Display SC", sans-serif;
-        color: #0B3D23;
+.contactus-mobileonly-text h1 {
+    font-family: "Playfair Display SC", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
 
-        font-weight: 500;
-        padding-top: 5rem;
+    color: #0B3D23;
+}
+
+
+.contactus-mobileonly-text span {
+    font-family: "Poppins", sans-serif;
+    color: #5A4C3F;
+}
+
+
+
+
+.contactus-mobileonly-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+    .phone-mobile {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 7.45rem;
+        gap: 0.8rem;
+        border: 1px solid #d9d9d9;
+
+        font-size: 1.4rem;
+    }
+
+    
+
+
+    .phone-mobile-icon {
+        width: 10%;
+        height: auto;
     }
 
 
-    .contact-us-mobile-subheader {
-        font-size: 1rem;
-        font-family: 'Poppins', sans-serif;
+
+
+    .email-mobile {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 7.45rem;
+        border: 1px solid #d9d9d9;
+
+        gap: 0.8rem;
+
+        font-size: 1.4rem;
+    }
+
+    
+
+
+    .email-mobile-icon {
+        width: 10%;
+        height: auto;
+
     }
 
 
 
 
 
-.instagram-mobile {
-  width: 8%;
-  height: 8%;
+    .address-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 7.45rem;
+        gap: 0.8rem;
+        border: 1px solid #d9d9d9;
+
+        font-size: 1.4rem;
+
+
+    }
+
+   
+
+    .address-mobile-icon {
+        width: 10%;
+        height: auto;
+    }
+
+
+
+
+    .phone-mobile.clicked,
+.email-mobile.clicked,
+.address-mobile.clicked {
+  background-color: #000;
+  color: #f1efef;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.facebook-mobile {
-  width: 8%;
-  height: 8%;
+
+
+
+
+    .contactus-mobileonly-socialhandles {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding-top: 3rem;
+
+        align-items: center;
+        justify-content: center;
+
+        
+    }
+
+
+
+
+    .x-mobile {
+        width: 8%;
+        height: auto;
+
+
+
+    }
+
+
+    .instagram-mobile {
+        width: 8%;
+        height: auto;
+    }
+
+
+    .facebook-mobile {
+        width: 8%;
+        height: auto;
+    }
+
+
+
+
+
+.blur-photo-cta-link {
+    text-decoration: none;
+    display: block;
+
+}
+
+.blur-photo-cta {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 16px;
+
+  margin-top: 4rem;
+}
+
+.blur-photo-cta-img {
+  width: 100%;
+  filter: blur(8px) brightness(0.5);
+  transition: filter 0.3s ease;
+}
+
+.blur-photo-cta-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  pointer-events: none
 
 }
 
 
-.twitter-mobile {
-  width: 8%;
-  height: 8%;
-
-}
-  
 
 
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
